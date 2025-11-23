@@ -1,6 +1,5 @@
 import React from 'react';
-import { User, TrendingUp, briefcase } from 'lucide-react'; // Note: lucide-react might not have briefcase as default export in older versions, using generic Icon pattern if needed, but assuming standard lib
-import { Briefcase } from 'lucide-react';
+import { User, TrendingUp, Briefcase } from 'lucide-react';
 
 export const TargetAudience: React.FC = () => {
   const audiences = [
