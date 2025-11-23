@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { SkeuoButton, SkeuoCard } from './ui/Skeuomorphic';
 import { MessageCircle, DollarSign, ArrowRight, ShieldCheck } from 'lucide-react';
 
@@ -77,12 +78,14 @@ export const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-             <SkeuoButton size="lg" variant="gold" className="text-lg shadow-xl">
-                <span className="flex items-center gap-2">
-                   Access The Blueprint <ArrowRight size={20} />
-                </span>
-             </SkeuoButton>
-             <SkeuoButton size="lg" variant="secondary" className="text-lg">
+             <Link to="/vsl">
+                 <SkeuoButton size="lg" variant="gold" className="text-lg shadow-xl w-full sm:w-auto">
+                    <span className="flex items-center gap-2">
+                       Access The Blueprint <ArrowRight size={20} />
+                    </span>
+                 </SkeuoButton>
+             </Link>
+             <SkeuoButton size="lg" variant="secondary" className="text-lg w-full sm:w-auto">
                 View Case Studies
              </SkeuoButton>
           </div>
