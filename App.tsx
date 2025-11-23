@@ -7,6 +7,9 @@ import { Curriculum } from './components/Curriculum';
 import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
 import { VSLPage } from './components/VSLPage';
+import { ProblemSolution } from './components/ProblemSolution';
+import { TargetAudience } from './components/TargetAudience';
+import { FAQ } from './components/FAQ';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -20,9 +23,12 @@ const ScrollToTop = () => {
 const HomePage: React.FC = () => (
   <>
     <Hero />
+    <ProblemSolution />
     <About />
-    <Testimonials />
+    <TargetAudience />
     <Curriculum />
+    <Testimonials />
+    <FAQ />
     <Pricing />
   </>
 );
